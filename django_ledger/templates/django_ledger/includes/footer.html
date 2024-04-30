@@ -1,0 +1,10 @@
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Django Ledger</strong> by  <strong>Aman Bhobhria</strong>.
+        </p>
+        {% if user.is_superuser %}
+            <a href="/admin">Admin</a>
+        {% endif %}
+    </div>
+</footer>
